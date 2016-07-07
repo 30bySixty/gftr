@@ -83,7 +83,19 @@ $friendlyblue: #03a9f4;
 #TSimg {
   text-align: left;
 }
-
+@media screen and (max-width: 640px) {
+  #CTimg {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+  #TSimg {
+    text-align: center;
+//    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
 //begin carousel
 .slick-slider {
   margin-bottom: 0 !important;
@@ -153,6 +165,12 @@ $friendlyblue: #03a9f4;
   padding-bottom: 35px;
   background-color: rgba(2, 5, 9, 0.5) !important;
   text-align: center;
+}
+@media screen and (max-width: 640px) {
+  .slide_caption p {
+    font-size: 14px;
+    font-weight: 500;
+  }
 }
 //end carousels
 
