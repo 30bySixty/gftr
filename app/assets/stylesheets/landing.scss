@@ -172,6 +172,11 @@ $friendlyblue: #03a9f4;
     font-weight: 500;
   }
 }
+@media screen and (max-width: 400px) {
+  .slick-slider .imgcontainer {
+  min-height: 65vh;
+}
+}
 //end carousels
 
 //begin exist section
