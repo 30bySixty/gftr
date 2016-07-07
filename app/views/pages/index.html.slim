@@ -11,11 +11,10 @@
     .in-vc
       .jumbotron
         h4.text-center.friendly
-          | Get first access to our stories. Request an invitation to join our pilot community.
+          | Get first access to our stories. Request an invite to join our pilot community.
         div.penguinimg
           img src= "https://s3.amazonaws.com/giftrassets/LandingPage+-+Join+the+Fun/penguin_standalone+(1).png"
-        .form
-          = render partial: "partials/mcpilot"
+        = render partial: "partials/mcpilot"
 #peekinside
   div.jumbotron
     h1.friendly.strong.text-center.friendlyblue
@@ -26,100 +25,44 @@
       div.imgcontainer#firstimg
         div.slide_caption
           h3.friendly.strong.white Birthday Gift?
-          p.white &ldquo;The best birthday gift I ever received was a fully-loaded Kindle. I had been frustrated that there were all these books I wanted to read but never had time, and it came pre-loaded with the titles! I loved that the gift showed that he had been listening to me.&rdquo;
+          p.white &ldquo;The best birthday gift I ever received was a fully-loaded Kindle. I had been frustrated that there were all these books I wanted to read but never had the time, and it came pre-loaded with the titles! I loved that the gift showed that he had been listening to me.&rdquo; — Anna from Chicago
       div.imgcontainer#secondimg
         div.slide_caption
           h3.friendly.strong.white Father's Day Gift?
-          p.white &ldquo;When my kids were younger, 2-8 years old, my wife found this jeweler who could take an imprint of one fingerprint from each child and produce that print on a silver medallion that I wear on a chain around my neck. I never ever take it off. It was my favorite Father’s Day present.&rdquo;
+          p.white &ldquo;When my kids were younger, 2-8 years old, my wife found this jeweler who could take an imprint of one fingerprint from each child and produce that print on a silver medallion that I wear on a chain around my neck. I never ever take it off, even though my kids are now all older. It was my favorite Father’s Day present!&rdquo;  — Brad from Minneapolis
       div.imgcontainer#thirdimg
         div.slide_caption
           h3.friendly.strong.white Personalized Gift?
-          p.white &ldquo; I had flown out to California for the Marine Corps Ball. The night of the ball he gave me a bracelet engraved with the name of a female character in a book that we both had read. She was a hero of sorts and I had stood by him through a really tough time. The character reminded him of me. So he had her name engraved on a bangle and gave it to me on a trip. It was incredibly thoughtful. The character was from a book we had both read and loved. And he really had to put some effort into the gift to buy the bracelet and get it engraved!&rdquo;
-/.existbg
-/  .row
-/    .columns.large-offset-1.large-10
-/      .row.existrow [data-equalizer]
-/        .columns.large-8.medium-7.existparent [data-equalizer-watch]
-/          div.existcontainer
-/            .existimage
-/            .existcontent.white
-/              p.strong.friendly We exist to celebrate authenticity and inspiration.
-/              br
-/              | &nbsp;
-/              br
-/              | &nbsp;
-/              br
-/              p.strong.friendly.right We exist to help you make a difference.
-/        .columns.large-4.medium-5.giftoninfo [data-equalizer-watch]
-/          div.out-vc
-/            .in-vc.text-center
-/              = image_tag '/assets/GiftOnLogo.png'
-/              p
-/                small.subheader A community that celebrates authentic gifts.
-/              a.button.radius#join-exist [href="https://www.facebook.com/groups/letsgifton" target="_blank"]
-/                | Join the Fun
-/.row.howitworks
-/  .columns.large-offset-1.large-10
-/    .jumbotron
-/       h2.stoneground.text-center.friendly
-/        | You have the power to help end bad gifts.
-/        .subheader Here’s how.
-/    .jumbotron.row.text-center [style="padding-top: 0;" data-equalizer]
-/      .columns.medium-4.medium-offset-0.small-offset-1.small-10
-/        div.HIWbg [data-equalizer-watch]
-/          i.fa.fa-user-plus.fa-3x
-/          h5.peppercorn Join us &amp; check out our current theme
-/      .columns.medium-4.medium-offset-0.small-offset-1.small-10
-/        div.HIWbg [data-equalizer-watch]
-/          i.fa.fa-comments-o.fa-3x
-/          h5.peppercorn Celebrate your best gift story
-/          small.h4-subheader
-/            | (or what could’ve been better)
-/      .columns.medium-4.medium-offset-0.small-10.small-offset-1.end
-/        div.HIWbg [data-equalizer-watch]
-/          i.fa.fa-heart.fa-3x
-/          h5.peppercorn Bask in positive community vibes
-/hr
-/.row.joingroup
-/  .columns.large-offset-1.large-10
-/    .jumbotron.row [data-equalizer data-equalize-on="medium"]
-/      .columns.medium-6.story [data-equalizer-watch]
-/        div.out-vc
-/          div.in-vc
-/            h4.peppercorn.text-center.friendly Check out a featured story from our community.
-/            div.storycontainer
-/              span.lapis.friendly.strong &ldquo;
-/              p.italic My favorite Father’s Day gift ever was a necklace my wife commissioned that has the fingerprints of all 4 of my kids. The kids were ages 2 to 8 at the time. I’ve never taken it off. My kids are all in their 20’s now.
-/              span.lapis.friendly.strong &rdquo;
-/              cite Brad from Minnesota, 60
-/      .columns.medium-6.text-center [data-equalizer-watch]
-/        h2.friendly.stoneground Be awesome.
-/        h2.friendly.stoneground Like Brad.
-/        div.penguinimg
-/          img src= "https://s3.amazonaws.com/giftrassets/LandingPage+-+Join+the+Fun/penguin_standalone+(1).png"
-/          .row
-/            a.button.radius.large#join-group [href="https://www.facebook.com/groups/letsgifton" target="_blank"]
-/              | Join the Fun
-/        .row
-/          i.fa.fa-facebook-official.fa-1x
-/          small.italic Request to join our Facebook community*
-/div.notecontainer
-/  .row.columns.note.text-center
-/      small.italic
-/        | * We care about creating the best user experience. We are accepting invitations to our community in batches. This month we will accept
-/        span.strong.lapis 50
-/        | new members.
-
-#signup
+          p.white &ldquo;I had flown out to California for the Marine Corps Ball. The night of the ball he gave me a bracelet engraved with the name of a female character in a book we had both read and loved. The character reminded him of me. It was incredibly thoughtful!&rdquo; — Ashleigh from Chicago
+#seenin
   .out-vc
     .in-vc
       .jumbotron
-        div
-          .row
-            .jumbotron
-              h3.pearl.text-center
-                | Love gifts but you're not on Facebook?
-              h6.subheader.text-center.light-gray
-                | Be the first to know when our new site launches.
-          .row.form
-            = render partial: "partials/mcdigest"
+        .row
+          h4.text-center.friendly As seen in...
+        .row.text-center[data-equalizer data-equalize-by-row="true"]
+          div
+            .columns.small-6.medium-4
+              a[href="http://www.chicagotribune.com/bluesky/originals/ct-wistem-new-class-bsi-20160310-story.html" target="_blank"]
+                div.out-vc[data-equalizer-watch]
+                  .in-vc
+                    #CTimg
+                      = image_tag '/assets/ChicagoTribune_G.png', alt: "Chicago Tribune" 
+            .columns.small-6.medium-4
+              a[href="http://chicagoinno.streetwise.co/2016/03/10/chicago-women-startup-program-wistem-adds-13-new-members/" target="_blank"]
+                div.out-vc[data-equalizer-watch]
+                  .in-vc
+                    = image_tag '/assets/ChicagoInno_G.png', alt: "ChicagoInno", id: "CInno"
+            .columns.small-6.medium-4
+              a[href="http://www.techstars.com/content/uncategorized/announcing-the-2015-global-startup-battle-champions/" target="_blank"]
+                div[data-equalizer-watch]
+                  .in-vc
+                    #TSimg
+                      = image_tag '/assets/Techstars_G.png', alt: "Techstars"
+#digestsignup
+  .out-vc
+    .in-vc
+      .jumbotron
+        h3.text-center.friendly.friendlyblue.strong Prefer to join when we launch?
+        p.text-center Sign up to be notified about our launch. In the meantime, we'll send you our Gift Digest.
+        = render partial: "partials/mcdigest"

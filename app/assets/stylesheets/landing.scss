@@ -10,11 +10,11 @@ $friendlyblue: #03a9f4;
 
 //GiftOn Description
 #pagetop > div {
-  min-height: 75vh;
+  min-height: 60vh;
 }
 #pagetop .relative {
   position: relative;
-  margin-top: -75vh;
+  margin-top: -60vh;
 }
 .banner-right {
   position: absolute;
@@ -52,17 +52,37 @@ $friendlyblue: #03a9f4;
 //  background-color: $light-gray;
   background-color: #f3f3ff;
 }
-//#pagetop .relative .rightbanner {
-//  height: 50px;
-//  width: 50px;
-//}
-//#pagetop .out-vc {
-//  display: table-row;
-//  position: relative;
-//  height: 100%;
-//}
+//dignest signup
+#digestsignup {
+  background-color: #ffffde;
+}
+#digestsignup p {
+  color: #666666;
+}
+#mc_embedded-subscribe-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.input-group-button .button {
+  font-family: $friendlyfont;
+  font-weight: 500;
+}
+#seenin h4 {
+  color: #666666;
+}
+#seenin img {
+  max-height: 100px;
+}
+#seenin img#CInno {
+  max-height: 50px;
+}
 
-
+#CTimg {
+  text-align: right;
+}
+#TSimg {
+  text-align: left;
+}
 
 //begin carousel
 .slick-slider {
@@ -129,7 +149,7 @@ $friendlyblue: #03a9f4;
   position: absolute;
   width: 100%;
   z-index: 2;
-  padding: 15px;
+  padding: 25px;
   padding-bottom: 35px;
   background-color: rgba(2, 5, 9, 0.5) !important;
   text-align: center;
