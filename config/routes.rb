@@ -33,6 +33,10 @@ Rails.application.routes.draw do
   get 'ideas/e5rd6' => 'ideas#e5rd6'
   get 'ideas/bto30' => 'ideas#bto30'
 
+  get 'familyfriends' => 'familyfriends#index'
+  get 'familyfriends/may16' => 'familyfriends#may16'
+  get 'familyfriends/june16' => 'familyfriends#june16'
+  get 'familyfriends/august16' => 'familyfriends#august16'
   
   post 'clicks', to: "clicks#create"
 
