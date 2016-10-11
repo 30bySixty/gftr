@@ -9,5 +9,13 @@ $("#help_block").append('<div class="notice"><%=escape_javascript(flash.discard(
  
 //RESET FORM IF MESSAGE SAVED
 <% if @resetForm == "1" %>
-$(".signups .form-control")[0].reset();
+//var win = window.open('http://letsgifton.us13.list-manage.com/subscribe/post?u=acf44fe8794f0d2cee6b339c9&amp;id=1b74105b91', '_blank');
+//if (win) {
+//    //Browser has allowed it to be opened
+//    win.focus();
+//} else {
+//    //Browser has blocked it
+//    alert('Please allow popups for this website');
+//};
+$("#new_user .form-control")[0].reset();
 <% end %>

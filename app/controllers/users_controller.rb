@@ -12,7 +12,8 @@ class UsersController < ApplicationController
       @errorMessage = []
 
       if @user.save
-        UserNotifier.send_signup_email(@user).deliver_now 
+#        format.js { redirect_to "http://letsgifton.us13.list-manage.com/subscribe/post?u=acf44fe8794f0d2cee6b339c9&amp;id=1b74105b91" }
+#        UserNotifier.send_signup_email(@user).deliver_now 
         format.js {flash[:notice] = "Thanks for joining GiftOn! We'll be in touch soon."}
         @resetForm = "1"
 
