@@ -1,9 +1,9 @@
 #pagetop
-  div.jumbotron.out-vc
-    div.in-vc.text-center
-      .jumbotron
-        h1.friendly.strong.friendlyblue Real-life gift stories to inspire your next gift idea.
-  div.relative
+  .jumbotron.out-vc[style="position: relative;"]
+    .in-vc.text-center
+      .jumbotron.hero
+        h1.friendly.strong.white Read gift stories. Get gift ideas.
+  /.relative
     = image_tag '/assets/banner_right.png', class: "banner-right"
     = image_tag '/assets/banner_left.png', class: "banner-left"
 #join-section
@@ -11,18 +11,24 @@
   .out-vc
     .in-vc
       .jumbotron
-        h4.text-center.friendly
-          | Get first access to our stories. Request an invite to join our pilot community.
+        h2.text-center.friendly.friendlyblue
+          | Woohoo, we've beta-launched!
+        .jumbotron[style="padding-top: 0;"]
+          p.text-center
+            | Browse real-life gift stories shared by gift givers and receivers just like you. Join our beta, browse &amp; share memorable gift stories, and win Amazon gift cards!
         div.penguinimg
-          img src= "https://s3.amazonaws.com/giftrassets/LandingPage+-+Join+the+Fun/penguin_standalone+(1).png"
+          img src= "https://s3.amazonaws.com/giftrassets/LandingPage+-+Join+the+Fun/penguin.png"
+        .jumbotron.text-center
+          p
+            | Sign up to get your invite to join our beta launch.
         = render partial: "partials/mcpilot"
 #peekinside
   div.jumbotron
     h1.friendly.strong.text-center.friendlyblue
       | Peek Inside GiftOn
-    h3.friendly.text-center.dark-gray
-      | We asked, what was your best...
-    .imgslider
+    p.text-center[style="font-weight: 500;"]
+      | GiftOn was built for those who dream big about showing love and affection to the people in their lives. Here's a taste of what our beta community's shared so far.
+    /.imgslider
       div.imgcontainer#firstimg
         div.slide_caption
           h3.friendly.strong.white Birthday Gift?
@@ -35,12 +41,26 @@
         div.slide_caption
           h3.friendly.strong.white Personalized Gift?
           p.white &ldquo;I had flown out to California for the Marine Corps Ball. The night of the ball he gave me a bracelet engraved with the name of a female character in a book we had both read and loved. The character reminded him of me. It was incredibly thoughtful!&rdquo; — Ashleigh from Chicago
+  .row
+    .columns.medium-6.large-4.text-center
+      = image_tag '/assets/coconuts.png', alt: "Crazy for Coconuts"
+    .columns.medium-6.large-4.text-center
+      = image_tag '/assets/daddy.png', alt: "Hostess gift"
+    .columns.medium-6.large-4.text-center
+      = image_tag '/assets/stool.png', alt: "Stepping up the bday gifts"
+    .columns.medium-6.large-4.text-center
+      = image_tag '/assets/love-notes.png', alt: "Housewarming"
+    .columns.medium-6.large-4.text-center
+      = image_tag '/assets/communion.png', alt: "Niece's First Communion"
+    .columns.medium-6.large-4.text-center
+      = image_tag '/assets/spectacle.png', alt: "New date's birthday performance"
+    
 #seenin
   .out-vc
     .in-vc
       .jumbotron
         .row
-          h4.text-center.friendly As seen in...
+          p.text-center.friendly[style="color: #4e4e4e;"] GiftOn was recognized by
         .row.text-center[data-equalizer data-equalize-by-row="true"]
           div
             .columns.small-12.medium-4

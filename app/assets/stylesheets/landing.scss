@@ -10,7 +10,24 @@ $friendlyblue: #03a9f4;
 
 //GiftOn Description
 #pagetop > div {
-  min-height: 60vh;
+//  min-height: 60vh;
+  background-image: linear-gradient(to bottom right, darken($primary-color, 20%), $primary-color);
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: image_url('hero_image.jpg') no-repeat center right;
+    background-size: cover;
+    opacity: .3; 
+    filter: brightness(90%);
+  }
+  .intro {
+//    padding: 3rem;
+    position: relative;
+  }
 }
 #pagetop .relative {
   position: relative;
@@ -34,10 +51,17 @@ $friendlyblue: #03a9f4;
 
 //join community
 #joincommunity {
-  background-color: #ffffde;
+//  background-color: #ffffde;
 }
-#joincommunity h4 {
-  color: #666666;
+#joincommunity {
+  h4, h2 {
+//    color: #666666;
+    font-weight: 600;
+  }
+  p {
+    color: #4a4a4a;
+    font-weight: 500;
+  }
 }
 #joincommunity .penguinimg {
   max-width: none;
@@ -51,6 +75,16 @@ $friendlyblue: #03a9f4;
 #peekinside {
 //  background-color: $light-gray;
   background-color: #f3f3ff;
+  p {
+    color: #4a4a4a;
+  }
+  img {
+    border: 1px solid #e6e6e6;
+    margin-bottom: 25px;
+  }
+  .columns {
+    min-height: 617px;
+  }
 }
 //dignest signup
 #digestsignup {
@@ -166,10 +200,22 @@ $friendlyblue: #03a9f4;
   background-color: rgba(2, 5, 9, 0.5) !important;
   text-align: center;
 }
+@media screen and (max-width: 1024px) {
+  #peekinside {
+    .columns {
+      min-height: 720px;
+    }
+  }
+}
 @media screen and (max-width: 640px) {
   .slide_caption p {
     font-size: 14px;
     font-weight: 500;
+  }
+  #peekinside {
+    .columns {
+      min-height: auto;
+    }
   }
 }
 @media screen and (max-width: 400px) {
